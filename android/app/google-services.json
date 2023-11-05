@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "619301210836",
+    "project_id": "socleader-d2df8",
+    "storage_bucket": "socleader-d2df8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619301210836:android:c29d1c22e166bcb5904941",
+        "android_client_info": {
+          "package_name": "com.example.soc_leader"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsc5kAbHt6icKq4clbT0qIYuWDqUZcz3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
