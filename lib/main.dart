@@ -16,7 +16,14 @@ void main() async {
 
   WidgetsFlutterBinding.ensureInitialized();
 
-  List<EventModel> events = json.decode(await rootBundle.loadString('assets/data.json')).map();
+  List<Map<String, dynamic>> tmp = json.decode(await rootBundle.loadString('assets/data.json'))['result'];
+  List<EventModel> events = [];
+  tmp.forEach((el) {
+    EventModel event = EventModel(title: el['title'], location: el['location'], imageUrl: el['imageUrl'], link: el['link']);
+    events.add(event);
+
+  });
+
 
   final getIt = GetIt.instance;
   getIt.registerSingleton<SharedPreferences>(await SharedPreferences.getInstance());
