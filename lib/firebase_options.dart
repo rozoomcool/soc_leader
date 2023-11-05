@@ -49,6 +49,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '619301210836',
     projectId: 'socleader-d2df8',
     authDomain: 'socleader-d2df8.firebaseapp.com',
+    databaseURL: 'https://socleader-d2df8-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'socleader-d2df8.appspot.com',
   );
 
@@ -57,6 +58,7 @@ class DefaultFirebaseOptions {
     appId: '1:619301210836:android:c29d1c22e166bcb5904941',
     messagingSenderId: '619301210836',
     projectId: 'socleader-d2df8',
+    databaseURL: 'https://socleader-d2df8-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'socleader-d2df8.appspot.com',
   );
 
@@ -65,7 +67,9 @@ class DefaultFirebaseOptions {
     appId: '1:619301210836:ios:67395c13b7b41aa2904941',
     messagingSenderId: '619301210836',
     projectId: 'socleader-d2df8',
+    databaseURL: 'https://socleader-d2df8-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'socleader-d2df8.appspot.com',
+    iosClientId: '619301210836-r1l5eue6kfg7kvhh1gbnb0jhd71jhmc8.apps.googleusercontent.com',
     iosBundleId: 'com.example.socLeader',
   );
 
@@ -74,7 +78,9 @@ class DefaultFirebaseOptions {
     appId: '1:619301210836:ios:f3f704e9732db598904941',
     messagingSenderId: '619301210836',
     projectId: 'socleader-d2df8',
+    databaseURL: 'https://socleader-d2df8-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'socleader-d2df8.appspot.com',
+    iosClientId: '619301210836-q4kol1omks245dojlvgvf88crv5ridgb.apps.googleusercontent.com',
     iosBundleId: 'com.example.socLeader.RunnerTests',
   );
 }

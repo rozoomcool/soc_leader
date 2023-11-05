@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "619301210836",
+    "firebase_url": "https://socleader-d2df8-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "socleader-d2df8",
     "storage_bucket": "socleader-d2df8.appspot.com"
   },
@@ -12,7 +13,12 @@
           "package_name": "com.example.soc_leader"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "619301210836-t7jll67vi32dr1uern170ns7v9aqt93t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBsc5kAbHt6icKq4clbT0qIYuWDqUZcz3Y"
@@ -20,7 +26,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619301210836-t7jll67vi32dr1uern170ns7v9aqt93t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "619301210836-q4kol1omks245dojlvgvf88crv5ridgb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.socLeader.RunnerTests"
+              }
+            }
+          ]
         }
       }
     }

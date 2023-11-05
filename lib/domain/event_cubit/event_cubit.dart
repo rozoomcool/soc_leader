@@ -27,9 +27,21 @@ class EventCubit extends Cubit<EventState> {
   void eventsAdd() async {
     try {
       String jsonString = await rootBundle.loadString('assets/data.json');
-      
-      Map<String, String> jsonData = json.decode(content);
-      print(jsonData);
+
+      List jsonData = json.decode(jsonString)['result'];
+
+      jsonData.forEach((element) async {
+        element = (element as Map<String, dynamic>);
+        print("//////////////////////////////");
+        await events.add(element);
+        print("//////////////////////////////");
+
+
+        // (element as Map<String, dynamic>).forEach((key, value) {
+        //   print("$key: $value");
+        // });
+      });
+
     } catch (e) {
       print("________________________________");
       print(e.toString());
