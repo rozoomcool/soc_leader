@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:soc_leader/widget/category_button.dart';
-import 'package:soc_leader/widget/recommend_event_card.dart';
 
+import '../widget/category_button.dart';
 import '../widget/event_card.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class EventsScreen extends StatelessWidget {
+  const EventsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,40 +14,19 @@ class HomeScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SizedBox(
-            height: 18.0,
-          ),
           Padding(
-            padding:
-                const EdgeInsets.only(left: 24.0, right: 24.0, bottom: 18.0),
-            child: Text(
-              'Рекомендации',
-              style: Theme.of(context)
-                  .textTheme
-                  .headlineSmall
-                  ?.copyWith(fontWeight: FontWeight.w700),
-            ),
-          ),
-          const SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                RecommendEventCard(),
-                RecommendEventCard(),
-                RecommendEventCard(),
-                RecommendEventCard(),
-              ],
-            ),
-          ),
-          Padding(
-            padding:
-                const EdgeInsets.only(left: 24.0, right: 24.0, bottom: 18.0),
-            child: Text(
-              'Популярные🔥',
-              style: Theme.of(context)
-                  .textTheme
-                  .headlineSmall
-                  ?.copyWith(fontWeight: FontWeight.w700),
+            padding: const EdgeInsets.symmetric(horizontal: 24.0),
+            child: TextFormField(
+              decoration: InputDecoration(
+                  fillColor: const Color(0XFFF5F5F5),
+                  filled: true,
+                  label: const Text("Найти мероприятие"),
+                  border: OutlineInputBorder(
+                      borderSide: BorderSide.none,
+                      borderRadius: BorderRadius.circular(25)),
+                  prefixIcon: const Icon(LineIcons.search),
+                  suffixIcon: IconButton(
+                      onPressed: () {}, icon: const Icon(LineIcons.filter))),
             ),
           ),
           const Padding(
@@ -63,6 +41,16 @@ class HomeScreen extends StatelessWidget {
                   CategoryButton(title: "Выставки", isPrime: false),
                 ],
               ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24.0),
+            child: Text(
+              "Найдено 56 мероприятий",
+              style: Theme.of(context)
+                  .textTheme
+                  .titleMedium
+                  ?.copyWith(fontWeight: FontWeight.w600),
             ),
           ),
           GridView.builder(
