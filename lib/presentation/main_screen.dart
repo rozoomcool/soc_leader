@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:soc_leader/domain/auth_state/auth_cubit.dart';
+import 'package:soc_leader/domain/event_cubit/event_cubit.dart';
 import 'package:soc_leader/domain/navbar_cubit/navbar_cubit.dart';
 
 class MainScreen extends StatelessWidget {
@@ -12,8 +13,9 @@ class MainScreen extends StatelessWidget {
     return MultiBlocProvider(
         // create: (context) => NavbarCubit(),
       providers: [
-        BlocProvider(create: (_) => NavbarCubit()),
-        BlocProvider(create: (_) => AuthCubit()..checkLoggedIn()),
+        BlocProvider(create: (context) => NavbarCubit()),
+        BlocProvider(create: (context) => AuthCubit()..checkLoggedIn()),
+        BlocProvider(create: (context) => EventCubit()..eventsAdd())
       ],
         child: Scaffold(
           appBar: AppBar(

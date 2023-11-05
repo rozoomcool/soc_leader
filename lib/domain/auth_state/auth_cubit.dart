@@ -18,8 +18,13 @@ class AuthCubit extends Cubit<AuthState> {
     if (await AuthStateHelper.isLoggedIn()) {
       emit(AuthSuccess());
     } else {
-      emit(AuthError("Пользователь не авторизован"));
+      emit(const AuthError("Пользователь не авторизован"));
     }
+  }
+
+  void logOut() async {
+    await AuthStateHelper.setLoggedIn(false);
+    emit(const AuthError('log out'));
   }
 
   Future<void> registerWithEmailPassword(String email, String password) async {

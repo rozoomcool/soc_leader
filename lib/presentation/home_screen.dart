@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:soc_leader/domain/event_cubit/event_cubit.dart';
 import 'package:soc_leader/widget/category_button.dart';
 import 'package:soc_leader/widget/recommend_event_card.dart';
 
@@ -65,17 +67,21 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          GridView.builder(
-            physics: const NeverScrollableScrollPhysics(),
-            shrinkWrap: true,
-            padding: const EdgeInsets.all(4.0),
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                crossAxisSpacing: 12,
-                mainAxisSpacing: 12,
-                childAspectRatio: 2.7 / 4),
-            itemBuilder: (context, index) => const EventCard(),
-            itemCount: 4,
+          BlocBuilder<EventCubit, EventState>(
+            builder: (context, state) {
+              return GridView.builder(
+                physics: const NeverScrollableScrollPhysics(),
+                shrinkWrap: true,
+                padding: const EdgeInsets.all(4.0),
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    crossAxisSpacing: 12,
+                    mainAxisSpacing: 12,
+                    childAspectRatio: 2.7 / 4),
+                itemBuilder: (context, index) => const EventCard(),
+                itemCount: 4,
+              );
+            }
           )
         ],
       ),

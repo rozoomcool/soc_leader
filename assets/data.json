@@ -1,0 +1,124 @@
+{
+    "result": [
+        {
+            "title": "Показ фильма «Повелитель ветра»",
+            "location": "Кинотеатр «КиноJam»",
+            "image_url": "https://cdn.culture.ru/images/67a62b64-3bd4-57dc-a7e6-e3d92877ebc7/w_397,h_284,c_fill,g_center/8e9ff8c8d23f936ffbb69deb3352de75-jpg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3530749/pokaz-filma-povelitel-vetra?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Показ фильма «Императрицы»",
+            "location": "Кинотеатр «КиноJam»",
+            "image_url": "https://cdn.culture.ru/images/357dad2b-c87f-517f-b88f-aa272e8538f3/w_397,h_284,c_fill,g_center/b2793007d2e4453b9d36ef9aad51c703-jfif",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3609024/pokaz-filma-imperatricy?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Показ фильма «По щучьему велению»",
+            "location": "Культурно-досуговый центр Большеберезниковского района",
+            "image_url": "https://cdn.culture.ru/images/8c326276-2806-5faa-b8ca-33bba2a693ec/w_397,h_284,c_fill,g_center/5f2dd3967d1ec7f8dbcdc321a951e996-jpg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3588614/pokaz-filma-po-shuchemu-veleniyu?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Вечер–портрет: «Художник многогранного таланта»",
+            "location": "Национальная библиотека Чеченской Республики им. А. А. Айдамирова",
+            "image_url": "https://cdn.culture.ru/images/97603cc9-c92d-5fbc-aca2-7e5f2baea4df/w_397,h_284,c_fill,g_center/ce9a51b2c486b01eb2f2085043239c03-jpg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3604902/vecher-portret-khudozhnik-mnogogrannogo-talanta?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Арт–час «Выдающийся скульптор–реалист»",
+            "location": "Национальная библиотека Чеченской Республики им. А. А. Айдамирова",
+            "image_url": "https://cdn.culture.ru/images/e25eeefb-7fd7-539d-8d5e-1c593ff099cd/w_397,h_284,c_fill,g_center/59340f3511291ca0c4a42c42989a8464-jpg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3604881/art-chas-vydayushiisya-skulptor-realist?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Выставка «Лучший город на Земле!»",
+            "location": "Государственная галерея им. А.А. Кадырова",
+            "image_url": "https://cdn.culture.ru/images/403b3d5c-9c5a-59f7-89eb-2f7860ca1c0e/w_397,h_284,c_fill,g_center/6aace11c98db772cd64f004e1868fc74-jpg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3615499/vystavka-luchshii-gorod-na-zemle?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Экскурсия по залу «Жизнь и деятельность Ахмата-хаджи Кадырова»",
+            "location": "Мемориальный комплекс Славы им. А. А. Кадырова",
+            "image_url": "https://cdn.culture.ru/images/f41e40d4-e177-56b9-81d4-94bf35dd462a/w_397,h_284,c_fill,g_center/600cb1d9b489c689c0eca2fcdf1d4195-jpg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/2518687/ekskursiya-po-zalu-zhizn-i-deyatelnost-akhmata-khadzhi-kadyrova?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Тематические экскурсии по Мемориальному комплексу Славы имени А.А. Кадырова",
+            "location": "Мемориальный комплекс Славы им. А. А. Кадырова",
+            "image_url": "https://cdn.culture.ru/images/9f2f3ca0-b24b-5b1f-9a59-8406bd821313/w_397,h_284,c_fill,g_center/9fe5bd8cc6269a7d37b3275357027ec3-jpg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/1920971/tematicheskie-ekskursii-po-memorialnomu-kompleksu-slavy-imeni-a-a-kadyrova?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Выставка картин и изделий чеченских художников",
+            "location": "Государственная галерея им. А.А. Кадырова",
+            "image_url": "https://cdn.culture.ru/images/9ab35a36-db68-5c8d-a7f2-29dd65e51513/w_397,h_284,c_fill,g_center/9efe8b8dcf0a95499a16095ccad04d1f-jpg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/2845108/vystavka-kartin-i-izdelii-chechenskikh-khudozhnikov?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Всероссийский виртуальный концертный зал. «Другое пространство. Continuo»",
+            "location": "Чеченский государственный драматический театр им. Х. Нурадилова",
+            "image_url": "https://cdn.culture.ru/images/49e09b16-38b4-5cbb-8366-0c13ff074bd3/w_397,h_284,c_fill,g_center/0ecb1cdf818b1a8f41170e3a8de36faf-jpg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3652395/vserossiiskii-virtualnyi-koncertnyi-zal-drugoe-prostranstvo-continuo?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Веселый, добрый друг детства — Маршак",
+            "location": "Республиканская специальная библиотека для слепых",
+            "image_url": "https://cdn.culture.ru/images/1492d765-710d-5d71-9788-5cf5dc05cafe/w_397,h_284,c_fill,g_center/23d22e9ca67b4e9a71c11f863bb095f0-jpeg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3599664/veselyi-dobryi-drug-detstva-marshak?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Грозный — город-герой",
+            "location": "Республиканская специальная библиотека для слепых",
+            "image_url": "https://cdn.culture.ru/images/4ad9bf6f-45d3-542f-970c-73742b14e820/w_397,h_284,c_fill,g_center/67590ac1fc9631b3574f67f02bc2456b-jpg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3599603/groznyi-gorod-geroi?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Выставка «Современный театр»",
+            "location": "Чеченский государственный драматический театр им. Х. Нурадилова",
+            "image_url": "https://cdn.culture.ru/images/83e9c5dd-d460-5caf-b328-4b60f6d91219/w_397,h_284,c_fill,g_center/e241a70d63b3ae011cd53fbcb18e7bef-jpg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3571504/vystavka-sovremennyi-teatr?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "«7 ноября — День проведения военного парада на Красной площади в Москве»",
+            "location": "Мемориальный комплекс Славы им. А. А. Кадырова",
+            "image_url": "https://cdn.culture.ru/images/ce390abb-08c2-53ee-9396-6ba18742cdfa/w_397,h_284,c_fill,g_center/3f9d85215155d85b5f130ba25fbe2990-jpg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3661445/7-noyabrya-den-provedeniya-voennogo-parada-na-krasnoi-ploshadi-v-moskve?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "«7 ноября — День проведения военного парада на Красной площади в Москве»",
+            "location": "Мемориальный комплекс Славы им. А. А. Кадырова",
+            "image_url": "https://cdn.culture.ru/images/ce390abb-08c2-53ee-9396-6ba18742cdfa/w_397,h_284,c_fill,g_center/3f9d85215155d85b5f130ba25fbe2990-jpg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3661444/7-noyabrya-den-provedeniya-voennogo-parada-na-krasnoi-ploshadi-v-moskve?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Праздничный концерт «День народного единства»",
+            "location": "Национальная музыкальная школа для одаренных детей имени М. М. Магомаева",
+            "image_url": "https://cdn.culture.ru/images/8a6ef225-677c-50d2-b1f0-1308beedaffa/w_397,h_284,c_fill,g_center/4d7b1f69f6547730f837fbde0933a3ad-jfif",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3657292/prazdnichnyi-koncert-den-narodnogo-edinstva?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Кинолекторий «Терроризм — как не стать его жертвой»",
+            "location": "Чеченский государственный колледж культуры и искусств им. В. А. Татаева",
+            "image_url": "https://cdn.culture.ru/images/3319b0d7-97ca-5ebf-81d4-8e7dcda05ac1/w_397,h_284,c_fill,g_center/1201a1510327a331201632d456602efa-jpg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3653960/kinolektorii-terrorizm-kak-ne-stat-ego-zhertvoi?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Лекция «Художественный музей Сиэтла»",
+            "location": "Государственная галерея им. А.А. Кадырова",
+            "image_url": "https://cdn.culture.ru/images/b7e23ec0-bda5-5602-921f-6b2e25b67c39/w_397,h_284,c_fill,g_center/87cd5e0412256986c3792c256d15cd0b-jpg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3641473/lekciya-khudozhestvennyi-muzei-sietla?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Лекция «Хохлома»",
+            "location": "Государственная галерея им. А.А. Кадырова",
+            "image_url": "https://cdn.culture.ru/images/80aa271e-4127-5c46-a0e8-1eb70f35301c/w_397,h_284,c_fill,g_center/fd053d316f9398cb68bf2be4703b7cb0-jpeg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3641257/lekciya-khokhloma?location=chechenskaya-respublika-groznyy"
+        },
+        {
+            "title": "Творческий час «Наступает время между созерцанием и действием»",
+            "location": "Национальная библиотека Чеченской Республики им. А. А. Айдамирова",
+            "image_url": "https://cdn.culture.ru/images/84d5f537-7c4a-56ea-9740-a372912f7008/w_397,h_284,c_fill,g_center/2a7bd5ef2e15e67edb26551c15b3e3b8-jpg",
+            "link": "https://www.culture.ru/afisha/chechenskaya-respublika-groznyy/events/3632203/tvorcheskii-chas-nastupaet-vremya-mezhdu-sozercaniem-i-deistviem?location=chechenskaya-respublika-groznyy"
+        }
+    ]
+}
