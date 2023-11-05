@@ -46,6 +46,7 @@ dependencies:
   form_validator: ^2.1.1
   cloud_firestore: ^4.12.2
   get_it: ^7.6.4
+  webview_flutter: ^4.4.2
 
 dev_dependencies:
   flutter_test:

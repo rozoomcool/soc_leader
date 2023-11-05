@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:soc_leader/presentation/web_view_page.dart';
 
 class EventCardNet extends StatelessWidget {
   const EventCardNet(
@@ -18,73 +19,76 @@ class EventCardNet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-          color: Theme.of(context).scaffoldBackgroundColor,
-          boxShadow: [
-            BoxShadow(color: Colors.black.withOpacity(0.04), blurRadius: 20)
-          ],
-          borderRadius: BorderRadius.circular(23)),
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(20),
-              child: Image.network(
-                imageUrl,
-                fit: BoxFit.fill,
+    return InkWell(
+      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => WebViewPage(title: title, url: link))),
+      child: Container(
+        decoration: BoxDecoration(
+            color: Theme.of(context).scaffoldBackgroundColor,
+            boxShadow: [
+              BoxShadow(color: Colors.black.withOpacity(0.04), blurRadius: 20)
+            ],
+            borderRadius: BorderRadius.circular(23)),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Image.network(
+                  imageUrl,
+                  fit: BoxFit.fill,
+                ),
               ),
-            ),
-            const SizedBox(
-              height: 8.0,
-            ),
-            Text(
-              title,
-              maxLines: 2,
-              overflow: TextOverflow.clip,
-              style: Theme.of(context)
-                  .textTheme
-                  .bodyLarge
-                  ?.copyWith(fontWeight: FontWeight.w500, fontSize: 18),
-            ),
-            const SizedBox(
-              height: 4.0,
-            ),
-            Text(
-              'Пн, 14 Дек. 18.00 - 23.00',
-              maxLines: 2,
-              overflow: TextOverflow.clip,
-              style: Theme.of(context)
-                  .textTheme
-                  .bodySmall
-                  ?.copyWith(color: const Color(0XFF6C63FF), fontSize: 10),
-            ),
-            const SizedBox(
-              height: 4.0,
-            ),
-            RichText(
-                text: TextSpan(children: [
-              const WidgetSpan(
-                  child: Icon(
-                LineIcons.mapMarker,
-                size: 16,
-              )),
-              const WidgetSpan(
-                  child: SizedBox(
-                width: 4.0,
-              )),
-              TextSpan(
-                  text: location,
-                  style: Theme.of(context).textTheme.labelSmall),
-            ])),
-            const SizedBox(
-              height: 2.0,
-            )
-          ],
+              const SizedBox(
+                height: 8.0,
+              ),
+              Text(
+                title,
+                maxLines: 2,
+                overflow: TextOverflow.clip,
+                style: Theme.of(context)
+                    .textTheme
+                    .bodyLarge
+                    ?.copyWith(fontWeight: FontWeight.w500, fontSize: 18),
+              ),
+              const SizedBox(
+                height: 4.0,
+              ),
+              Text(
+                'Пн, 14 Дек. 18.00 - 23.00',
+                maxLines: 2,
+                overflow: TextOverflow.clip,
+                style: Theme.of(context)
+                    .textTheme
+                    .bodySmall
+                    ?.copyWith(color: const Color(0XFF6C63FF), fontSize: 10),
+              ),
+              const SizedBox(
+                height: 4.0,
+              ),
+              RichText(
+                  text: TextSpan(children: [
+                const WidgetSpan(
+                    child: Icon(
+                  LineIcons.mapMarker,
+                  size: 16,
+                )),
+                const WidgetSpan(
+                    child: SizedBox(
+                  width: 4.0,
+                )),
+                TextSpan(
+                    text: location.length > 16 ? "${location.substring(0, 15)}..." : location,
+                    style: Theme.of(context).textTheme.labelSmall),
+              ])),
+              const SizedBox(
+                height: 2.0,
+              )
+            ],
+          ),
         ),
       ),
     );
