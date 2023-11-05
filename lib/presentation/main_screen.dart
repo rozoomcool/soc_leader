@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:soc_leader/domain/auth_state/auth_cubit.dart';
 import 'package:soc_leader/domain/navbar_cubit/navbar_cubit.dart';
 
 class MainScreen extends StatelessWidget {
@@ -8,8 +9,12 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider<NavbarCubit>(
-        create: (context) => NavbarCubit(),
+    return MultiBlocProvider(
+        // create: (context) => NavbarCubit(),
+      providers: [
+        BlocProvider(create: (_) => NavbarCubit()),
+        BlocProvider(create: (_) => AuthCubit()..checkLoggedIn()),
+      ],
         child: Scaffold(
           appBar: AppBar(
             // leading: const Icon(LineIcons.user),
