@@ -13,22 +13,30 @@ import 'domain/event_cubit/event_cubit.dart';
 import 'firebase_options.dart';
 
 void main() async {
-
   WidgetsFlutterBinding.ensureInitialized();
 
-  List<Map<String, dynamic>> tmp = json.decode(await rootBundle.loadString('assets/data.json'))['result'];
-  List<EventModel> events = [];
-  tmp.forEach((el) {
-    EventModel event = EventModel(title: el['title'], location: el['location'], imageUrl: el['imageUrl'], link: el['link']);
-    events.add(event);
+  List<Map<String, dynamic>> tmp =
+      (json.decode(await rootBundle.loadString('assets/data.json'))['result']
+              as List)
+          .map((e) => e as Map<String, dynamic>)
+          .toList();
 
+  List<EventModel> events = [];
+
+  tmp.forEach((el) {
+    EventModel event = EventModel(
+        title: el['title'],
+        location: el['location'],
+        imageUrl: el['image_url'],
+        link: el['link']);
+    events.add(event);
   });
 
-
   final getIt = GetIt.instance;
-  getIt.registerSingleton<SharedPreferences>(await SharedPreferences.getInstance());
+  getIt.registerSingleton<SharedPreferences>(
+      await SharedPreferences.getInstance());
   getIt.registerSingleton<List<EventModel>>(events);
-  
+
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );

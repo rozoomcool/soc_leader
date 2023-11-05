@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:get_it/get_it.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:soc_leader/domain/event_cubit/event_cubit.dart';
 import 'package:soc_leader/widget/category_button.dart';
+import 'package:soc_leader/widget/event_card_net.dart';
 import 'package:soc_leader/widget/recommend_event_card.dart';
 
 import '../widget/event_card.dart';
@@ -69,18 +71,28 @@ class HomeScreen extends StatelessWidget {
           ),
           BlocBuilder<EventCubit, EventState>(
             builder: (context, state) {
-              return GridView.builder(
-                physics: const NeverScrollableScrollPhysics(),
-                shrinkWrap: true,
-                padding: const EdgeInsets.all(4.0),
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    crossAxisSpacing: 12,
-                    mainAxisSpacing: 12,
-                    childAspectRatio: 2.7 / 4),
-                itemBuilder: (context, index) => const EventCard(),
-                itemCount: 4,
-              );
+              context.read<EventCubit>().eventsGetAll();
+              if(state is EventStateLoaded) {
+                return GridView.builder(
+                  physics: const NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  padding: const EdgeInsets.all(4.0),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 12,
+                      mainAxisSpacing: 12,
+                      childAspectRatio: 2.7 / 4),
+                  itemBuilder: (context, index) => EventCardNet(title: state.events[index].title,
+                    location: state.events[index].location,
+                    imageUrl: state.events[index].imageUrl,
+                    link: state.events[index].link,
+                  ),
+                  itemCount: state.events.length,
+                );
+              } else {
+                return const Center(child: CircularProgressIndicator(),);
+              }
+
             }
           )
         ],

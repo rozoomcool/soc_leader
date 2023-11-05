@@ -18,21 +18,17 @@ class EventCubit extends Cubit<EventState> {
     initCollectionRef();
   }
 
-  void initCollectionRef() => events = [];
+  void initCollectionRef() => events = GetIt.I<List<EventModel>>();
 
-  var events = GetIt.I<List<EventModel>>();
+  List<EventModel> events = [];
 
    void eventsGetAll() async {
-    emit(EventStateLoading());
     emit(EventStateLoaded(events: events));
   }
 
   void eventsAdd(EventModel event) async {
-    try {
-      events.add(event);
-    } catch (e) {
-      emit(EventStateError());
-    }
+     events.add(event);
+     emit(EventStateLoaded(events: events));
   }
 
 }
