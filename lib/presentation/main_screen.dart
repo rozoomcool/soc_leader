@@ -15,7 +15,7 @@ class MainScreen extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => NavbarCubit()),
         BlocProvider(create: (context) => AuthCubit()..checkLoggedIn()),
-        BlocProvider(create: (context) => EventCubit()..eventsAdd())
+        BlocProvider(create: (context) => EventCubit())
       ],
         child: Scaffold(
           appBar: AppBar(

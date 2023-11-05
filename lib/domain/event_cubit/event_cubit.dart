@@ -7,6 +7,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:get_it/get_it.dart';
 
 part 'event_state.dart';
 
@@ -17,35 +18,20 @@ class EventCubit extends Cubit<EventState> {
     initCollectionRef();
   }
 
-  void initCollectionRef() => events = firestore.collection('events');
+  void initCollectionRef() => events = [];
 
-  FirebaseFirestore firestore = FirebaseFirestore.instance;
-  late CollectionReference events;
+  var events = GetIt.I<List<EventModel>>();
 
-  Future<QuerySnapshot<Object?>> eventsGetAll() async => await events.get();
+   void eventsGetAll() async {
+    emit(EventStateLoading());
+    emit(EventStateLoaded(events: events));
+  }
 
-  void eventsAdd() async {
+  void eventsAdd(EventModel event) async {
     try {
-      String jsonString = await rootBundle.loadString('assets/data.json');
-
-      List jsonData = json.decode(jsonString)['result'];
-
-      jsonData.forEach((element) async {
-        element = (element as Map<String, dynamic>);
-        print("//////////////////////////////");
-        await events.add(element);
-        print("//////////////////////////////");
-
-
-        // (element as Map<String, dynamic>).forEach((key, value) {
-        //   print("$key: $value");
-        // });
-      });
-
+      events.add(event);
     } catch (e) {
-      print("________________________________");
-      print(e.toString());
-      print("________________________________");
+      emit(EventStateError());
     }
   }
 
